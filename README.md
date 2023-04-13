@@ -8,6 +8,7 @@ Berikut hasil output-nya:
 
 # Pengambangan Sedehana
 Dari program di atas sudah dikembangkan menjadi seperti gambar di bawah ini:
+
 Input:
 
 ![image](https://user-images.githubusercontent.com/8088664/231845415-23232556-1a92-4560-801f-b9c19df70812.png)
