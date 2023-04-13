@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Saham</title>
+  </head>
+  <body>
+    <h1>Kalkulator Saham</h1>
+    <form>
+      <label for="harga-beli">Harga Beli:</label>
+      <input type="number" id="harga-beli" name="harga-beli"><br>
+
+      <label for="harga-jual">Harga Jual:</label>
+      <input type="number" id="harga-jual" name="harga-jual"><br>
+
+      <label for="lot">Jumlah Lot:</label>
+      <input type="number" id="lot" name="lot"><br>
+
+      <label for="komisi-beli">Komisi Beli (%):</label>
+      <input type="number" id="komisi-beli" name="komisi-beli"><br>
+
+      <label for="komisi-jual">Komisi Jual (%):</label>
+      <input type="number" id="komisi-jual" name="komisi-jual"><br>
+
+      <button type="button" onclick="hitung()">Hitung</button>
+    </form>
+
+    <p>Total Beli: <span id="total-beli"></span></p>
+    <p>Total Jual: <span id="total-jual"></span></p>
+    <p>Kerugian Sebesar: <span id="kerugian"></span></p>
+    <p>Kerugian dalam (%): <span id="persentase-kerugian"></span></p>
+
+    <script>
+      function hitung() {
+        var hargaBeli = parseFloat(document.getElementById("harga-beli").value);
+        var hargaJual = parseFloat(document.getElementById("harga-jual").value);
+        var jumlahLot = parseInt(document.getElementById("lot").value);
+        var komisiBeli = parseFloat(document.getElementById("komisi-beli").value) / 100;
+        var komisiJual = parseFloat(document.getElementById("komisi-jual").value) / 100;
+
+        var totalBeli = hargaBeli * jumlahLot * (1 + komisiBeli);
+        var totalJual = hargaJual * jumlahLot * (1 - komisiJual);
+        var kerugian = totalJual - totalBeli;
+        var persentaseKerugian = kerugian / totalBeli * 100;
+
+        document.getElementById("total-beli").textContent = totalBeli.toFixed(2);
+        document.getElementById("total-jual").textContent = totalJual.toFixed(2);
+        document.getElementById("kerugian").textContent = kerugian.toFixed(2);
+        document.getElementById("persentase-kerugian").textContent = persentaseKerugian.toFixed(2) + "%";
+      }
+    </script>
+  </body>
+</html>
