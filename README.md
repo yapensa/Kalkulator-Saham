@@ -12,5 +12,7 @@ Input:
 
 Output:
 ![image](https://user-images.githubusercontent.com/8088664/231823848-46eb7238-5d35-45c8-a246-16d018b20546.png)
+![image](https://user-images.githubusercontent.com/8088664/231824595-e6f93c70-6d7f-47d3-9071-99b0369ab5a8.png)
+
 
 Link: https://www.pojoknarsis.com/p/kalkulator-saham.html
