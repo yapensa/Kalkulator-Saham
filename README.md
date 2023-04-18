@@ -6,7 +6,7 @@ Berikut hasil output-nya:
 
 ![image](https://user-images.githubusercontent.com/8088664/231823360-ee5f165f-06c0-42f8-8b8f-a71c363b9c30.png)
 
-# Pengambangan Sedehana
+# Pengembangan Sedehana
 Dari program di atas sudah dikembangkan menjadi seperti gambar di bawah ini:
 
 Input:
